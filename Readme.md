@@ -23,13 +23,19 @@ $ tsc -init
 ```
 $ tsc -w
 ```	
-*Install [VSCode](https://code.visualstudio.com/Download)
-*Reading and transpile typescript http://blogs.msdn.com/b/typescript/archive/2015/04/30/using-typescript-in-visual-studio-code.aspx
-*Run transpiled javascript by running the following command:
+7. Run transpiled javascript:
+```
+$ node server.js
+```	
+
+
+> Install [VSCode](https://code.visualstudio.com/Download)
+> Reading and transpile typescript http://blogs.msdn.com/b/typescript/archive/2015/04/30/using-typescript-in-visual-studio-code.aspx
+> Run transpiled javascript by running the following command:
 ```
 $ node app
 ```		
 		
 ##Also Read:
-https://code.visualstudio.com/Docs/languages/typescript
-http://tutorialzine.com/2016/07/learn-typescript-in-30-minutes/
++ https://code.visualstudio.com/Docs/languages/typescript
++ http://tutorialzine.com/2016/07/learn-typescript-in-30-minutes/
