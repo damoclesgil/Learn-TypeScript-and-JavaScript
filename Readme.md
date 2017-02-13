@@ -2,8 +2,11 @@
 ![typescript.jpg](assets/imgs/typescript.jpg)
 TypeScript is a compile-to-JS language. All code you write, in TypeScript, will eventually be executed by a JavaScript runtime. This could be a browser or server environment, such as Chrome or Node.js.
 
-> Install Node.js from https://nodejs.org/ <
-Install [TypeScript](http://www.typescriptlang.org/#Download) 1.6+ using Node Package Manager command:  
+1. Install Node.js from https://nodejs.org/
+2. Install [TypeScript](http://www.typescriptlang.org/#Download):
+
+### CLI 
+3. Install TypeScript  
 ```
 $ npm install -g typescript
 ```
@@ -28,10 +31,9 @@ Run transpiled javascript:
 $ node server.js
 ```	
 
-
-> Install [VSCode](https://code.visualstudio.com/Download)
-> Reading and [transpile typescript](http://blogs.msdn.com/b/typescript/archive/2015/04/30/using-typescript-in-visual-studio-code.aspx)
-> Run transpiled javascript by running the following command:
+Install [VSCode](https://code.visualstudio.com/Download)
+Reading and [transpile typescript](http://blogs.msdn.com/b/typescript/archive/2015/04/30/using-typescript-in-visual-studio-code.aspx)
+Run transpiled javascript by running the following command:
 ```
 $ node app
 ```		
