@@ -2,12 +2,12 @@
 ![typescript.jpg](assets/imgs/typescript.jpg)
 TypeScript is a compile-to-JS language. All code you write, in TypeScript, will eventually be executed by a JavaScript runtime. This could be a browser or server environment, such as Chrome or Node.js.
 
-1. Install Node.js from https://nodejs.org/
-2. Install [TypeScript](http://www.typescriptlang.org/#Download) 1.6+ using Node Package Manager command:  
+> Install Node.js from https://nodejs.org/
+> Install [TypeScript](http://www.typescriptlang.org/#Download) 1.6+ using Node Package Manager command:  
 ```
 $ npm install -g typescript
 ```
-3. Compiling your code
+> Compiling your code
 ```
 $ tsc main.ts
 ```	
