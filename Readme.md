@@ -6,7 +6,7 @@ TypeScript is a compile-to-JS language. All code you write, in TypeScript, will 
 2. Install [TypeScript](http://www.typescriptlang.org/#Download):
 
 ### CLI 
-3. Install TypeScript  
+Install TypeScript  
 ```
 $ npm install -g typescript
 ```
@@ -14,7 +14,7 @@ Compiling your code
 ```
 $ tsc main.ts
 ```	
-4. Compiling int real time
+Compiling int real time
 ```
 $ tsc -w main.ts
 ```	
@@ -31,13 +31,14 @@ Run transpiled javascript:
 $ node server.js
 ```	
 
-Install [VSCode](https://code.visualstudio.com/Download)
-Reading and [transpile typescript](http://blogs.msdn.com/b/typescript/archive/2015/04/30/using-typescript-in-visual-studio-code.aspx)
-Run transpiled javascript by running the following command:
-```
-$ node app
-```		
-		
 ##Also Read:
 + https://code.visualstudio.com/Docs/languages/typescript
 + http://tutorialzine.com/2016/07/learn-typescript-in-30-minutes/
+
+#### Others
+ Install [VSCode](https://code.visualstudio.com/Download)
+Reading and [transpile typescript](http://blogs.msdn.com/b/typescript/archive/2015/04/30/using-typescript-in-visual-studio-code.aspx)
+ Run transpiled javascript by running the following command:
+```
+$ node app
+```		
