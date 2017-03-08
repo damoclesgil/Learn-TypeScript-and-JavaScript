@@ -11,6 +11,7 @@ var tiles = sign.length;
 var subTotal = tiles * 5;
 var shipping = 7;
 var grandTotal = subTotal + shipping;
+var soma = 5 + 5;
 
 // Get the element that has an id of greeting
 var el = document.getElementById('greeting');
@@ -36,6 +37,9 @@ elShipping.textContent = '$' + shipping;
 // Get the element that has an id of grandTotal then update its contents
 var elGrandTotal = document.getElementById('grandTotal');
 elGrandTotal.textContent = '$' + grandTotal;
+
+var elSoma = document.getElementById('soma');
+elSoma.textContent = '$' + soma;
 
 /* 
 NOTE: textContent does not work in IE8 or earlier
