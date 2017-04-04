@@ -341,3 +341,6 @@ a[data-state='record'] {background-image: url('../images/record.png');}
     background-size: 72px 72px;
   }
 }
+.verde{
+  color: green;
+}

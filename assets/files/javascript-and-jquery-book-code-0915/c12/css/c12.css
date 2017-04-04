@@ -80,7 +80,8 @@ input:hover {
 	border: 1px solid #666;}
 input:focus {
 	border: 1px solid #00cccc;
-	outline: none;}
+	outline: none;
+	}
 
 
 /* Gallery of images */

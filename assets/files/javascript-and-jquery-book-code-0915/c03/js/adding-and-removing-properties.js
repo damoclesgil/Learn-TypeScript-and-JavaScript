@@ -13,10 +13,10 @@ delete hotel.booked;
 var elName = document.getElementById('hotelName'); // Get element
 elName.textContent = hotel.name;                   // Update HTML with property of the object
 
-var elPool = document.getElementById('pool');      // Get element
+var elPool = document.getElementById('gym');      // Get element
 elPool.className = hotel.pool;                     // Update HTML with property of the object
 
-var elGym = document.getElementById('gym');        // Get element
+var elGym = document.getElementById('pool');        // Get element
 elGym.className = hotel.gym;                       // Update HTML with property of the object
 
 /* 
