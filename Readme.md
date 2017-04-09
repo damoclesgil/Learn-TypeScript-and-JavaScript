@@ -1,6 +1,6 @@
 # Starded Studies Ecmascript and Typescript 👊
 
-![typescript.jpg](typescriptassets/imgs/typescript.jpg)
+![typescript.jpg](typescript/assets/imgs/typescript.jpg)
 
-![javascript.jpg](javascript/assets/imgs/javascript.jpg)
+![javascript.jpg](javascript/assets/imgs/javascript.png)
 
