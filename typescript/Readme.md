@@ -1,9 +1,10 @@
-#Getting Started
+#Typescript OverPower
 ![typescript.jpg](assets/imgs/typescript.jpg)
 TypeScript is a compile-to-JS language. All code you write, in TypeScript, will eventually be executed by a JavaScript runtime. This could be a browser or server environment, such as Chrome or Node.js.
 
 1. Install Node.js from https://nodejs.org/
 2. Install [TypeScript](http://www.typescriptlang.org/#Download)
+3. [Documentation](https://github.com/Microsoft/TypeScript)
 
 ### CLI 
 Install TypeScript  

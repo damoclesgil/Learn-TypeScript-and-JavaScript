@@ -1,0 +1,6 @@
+- Hosting
+- Primitve Types
+- Undefined and Null
+- Global Scope
+- Function Scope
+- Block Scope
