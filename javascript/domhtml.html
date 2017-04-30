@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div id="bg" style="width:200px; height:200px; background: #000" onmouseover="over(this)">
+        <h2 style="text-align: center; color:#fff">Over me</h2>
+        <h2 style="text-align: center; color:#fff">Now</h2>
+    </div>
+    <input type="number" id="val" class="number_val_input">
+    <button id="generate_btn">Generate</button>
+</body>
+
+<script>
+    function over(obj) {
+        obj.innerHTML = '<h2 style="text-align: center; color:#fff">Over me JS</h2>;'
+    }
+
+    var input = document.getElementsByClassName('number_val_input');
+    var btn_generate = document.getElementById('generate_btn');
+    btn_generate.addEventListener('click', generate);
+
+    function generate() {
+        var value = input[0].value;
+
+        for (var i = 0; i < parseInt(value); i++) {
+            var inpt = document.createElement('input');
+            inpt.id = "#btn_" + i;
+
+            var body = document.getElementsByTagName('body');
+            body[0].appendChild(inpt);
+        }
+
+    }
+    var btn_generate = document.getElementById('generate_btn');
+    btn_generate.addEventListener('click', generate);
+
+    var inpt = document.createElement('input');
+    inpt.id = "#btn_" + i;
+
+    var body = document.getElementsByTagName('body');
+    body[0].appendChild(inpt);
+</script>
+
+</html>

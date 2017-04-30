@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Dom css</title>
+    <meta charset="UTF-8">>
+</head>
+
+<body>
+
+    <div id="bg" style="width:200px; height:200px; background: #000" onmouseover="over(this)" onmouseout="out(this)">
+        <h2 style="text-align: center; color:#fff">Over me</h2>
+        <h2 style="text-align: center; color:#fff">Now</h2>
+    </div>
+    <script>
+        var title = document.getElementById('h1');
+
+        title.style.color = "#fff000";
+
+        function over(obj) {
+            obj.innerHTML = '<h2 style="text-align: center; color:#fff">Over me JS</h2>';
+            obj.style.background = "#fff000";
+        }
+
+        function out(obj) {
+            obj.style.background = "#ffffff";
+            obj.getElementsByTagName('h2')[0].style.color = "red";
+        }
+    </script>
+</body>
+
+</html>
