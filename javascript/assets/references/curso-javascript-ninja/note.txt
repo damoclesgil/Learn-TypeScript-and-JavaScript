@@ -1,0 +1,112 @@
+Escopo Local Started
+(function (){
+  'use strict';
+})();
+
+Escopo Variavel
+Local onde declaro uma variavel
+Problema se declara global -> Ela se aplica em tudo, então pode dar conflito
+
+Function cria escopo local -> Ela e chamada só quando você invocar (ex: Minhafuncao();)
+
+Garbaje Collector => Coleta de Lixo, deixa só os recursos que serão necessários
+
+O array não existe, um array em javascript é nada mais do que um objeto que tem os índices númerados
+Arays são objetos disfarçados e como objetos eles tem propriedades e metodos.
+Length -> Conta a quantidade de caracteres que possui no array
+Push -> Empurrar os valores para dentro do array
+
+Tudo que você consegue fazer com objeto em javascript, você consegue fazer com funções em javascript.
+
+A progamação funcional é mais dinâmica.
+
+IIFE -> Immediately Invoked Function Expression -> Função auto executada/ que executa automaticamente.
+A vantagem de criar uma função assim é que você força um escopo local, você não precisa de um escopo global.
+Você compartilha a informação com todos os arquivos do projeto e isso pode gerar conflito.
+
+WRAPPER OBJECTS -> Valores primitivos não são objetos(boolean, );
+Se ele tem propriedades e métodos -> é um objeto.
+Se não tem ele é primitivo.
+Contrutores -> Criam novos objetos
+WRAPPER => Envolver/Empacator
+
+Testar Tipos de Valores -> typeof <operand>
+
+OBJETOS -> São mutáveis e são manipuláveis por referências
+Formato Literais
+
+this -> é um cara que vai aparecer em dois lugares -> Métodos de Objetos para fazer um
+referências ao objeto principal.
+
+arguments -> semelhante array
+
+'use strict' -> reporta os erro (não permite declaração de variaveis sem o var, nao permite o uso do with, nao permite objetos iguais e etc).
+
+Objeto String
+propriedade .length = tamanho da String
+metodo.chartAt[0] = indice da string
+metodo.concat('juntar') = cria uma nova string com a junção
+metodo.indexOf['d'] = pega posição da letra, procura onde está o 'd'.
+metodo.lastIndexOf = pega posição o ultimo'.
+metodo.replace('d', 'a') = cria uma nova string com as alterações.
+metodo.slice(2, 5) = Pega do indice do 2 ate o 5.
+metodo.subsString(2, 5) = mesma coias do slice só que pega do final até o início tbm.
+metodo.splite() = quebrar a string e transformar em um array.
+metodo.replace('n', 'z') = Pega o *primeiro* 'n' e subistitui por 'z'.
+metodo.split('n') = remove todos os 'n'.
+metodo.split('n').join('z') = Altera *todos* os 'n' por 'z'.
+metodo.toLowerCase() = Letras Maisculas.
+metodo.toUpperCase() = Letras Minusculas.
+metodo.chartAt(0).toUpperCase() -> Pega uma letra específica.
+
+sync // um após o outro
+assync // ao mesmo tempo
+
+.parentNode -> Pai do Elemento
+.childNodes -> Filhos do Elemento
+.firstChild -> Selecionar o primeiro Filho
+.lastChild -> Selecionar o último filho
+.nextSibling -> Seleciona o próximo o irmão
+.previousSibling ->  Seleciona o irmão anterior
+.nodeType -> Mostra qual é o tipo de nó
+.firstElementChild ->  Selecionar o primeiro Elemento
+
+DOM(Document Obect Model) - Manipular com perfomance
+document.createDocumentFragment()
+
+AJAX(Asynchronous Javascript and XML) - Não deixa uma operação que demanda muito recurso bloquear tua thread principal e você efetua sua ação para que não interfira na utilização.
+Ele vai servir para fazer requisições na mesma url/dominio sem buga.
+var ajax = new XMLHttpRequest() -> requisição ajax
+
+ajax.readyState
+0: Não Enviado
+1: Conexão Aberta
+2: Headers Recebidos
+3: Carregando o corpo do request
+4: Concluído
+
+ajax.status
+HTTP STATUS
+(200, 403, 404, 500, etc)
+ajax.responseXML -> puxa o xml
+
+AJAX
+tratamento de erros try{} catch{} -> Para que nao mostre ao usuario o erro veremlho e para que nao interfira na utilização do sistema
+
+Closure -> É um escopo fechado
+
+GET: Usado para trazer/buscar informações
+POST: Para criar/adicionar/enviar informações
+PUT: Para atulizar informações
+DELETE: Para excluir informações
+
+
+Ferramentas para TDD
+CHAI
+MOCA
+
+Green -> Passou
+Azul -> Refactoring/Melhorar
+Red -> Reproved
+
+BDD -> por comportamento
