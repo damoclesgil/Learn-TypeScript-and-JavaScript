@@ -9,10 +9,10 @@ Problema se declara global -> Ela se aplica em tudo, então pode dar conflito
 
 Function cria escopo local -> Ela e chamada só quando você invocar (ex: Minhafuncao();)
 
-Garbaje Collector => Coleta de Lixo, deixa só os recursos que serão necessários
+Garbaje Collector => Coleta de Lixo, deixa só os recursos que serão necessários, que pode evitar problemas de vazamento de memória.
 
 O array não existe, um array em javascript é nada mais do que um objeto que tem os índices númerados
-Arays são objetos disfarçados e como objetos eles tem propriedades e metodos.
+Arrays são objetos disfarçados e como objetos eles tem propriedades e metodos.
 Length -> Conta a quantidade de caracteres que possui no array
 Push -> Empurrar os valores para dentro do array
 
@@ -80,7 +80,7 @@ var ajax = new XMLHttpRequest() -> requisição ajax
 
 ajax.readyState
 0: Não Enviado
-1: Conexão Aberta
+1: , Aberta
 2: Headers Recebidos
 3: Carregando o corpo do request
 4: Concluído

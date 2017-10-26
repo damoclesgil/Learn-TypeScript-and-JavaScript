@@ -46,4 +46,4 @@ function divisao(numero1, numero2) {
 }
 
 // Invoque a função criada acima, passando os parâmetros 10 e 2.
-console.logdivisao(10, 2);
+console.log(divisao(10, 2));
