@@ -110,3 +110,16 @@ Azul -> Refactoring/Melhorar
 Red -> Reproved
 
 BDD -> por comportamento
+
+
+Epressão Regular
+Fica entra "/ suaregex /"
+
+/g -> global
+/i -> ignore case
+\w -> caracterse alfanumericos
+\d -> números
+
+var texto = "Boana punctata é uma espécie de anfíbio da família Hylidae, encontrada no Brasil, Argentina, Bolívia, Colômbia, Equador, Guiana, Guiana Francesa, Paraguai, Peru, Suriname, Trindade e Tobago e Venezuela. Está presente em diversos habitats, como florestas primárias e secundárias, áreas alagadas e urbanizadas, geralmente associada a plantas aquáticas."
+
+texto.match(/\w/m/g);
