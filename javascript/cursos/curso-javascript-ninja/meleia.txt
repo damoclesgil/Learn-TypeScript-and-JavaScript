@@ -119,7 +119,28 @@ Fica entra "/ suaregex /"
 /i -> ignore case
 \w -> caracterse alfanumericos
 \d -> números
+\s -> espaço em branco
+\n -> quebras de linhas
+\t -> "tab" tabulação
+\. -> qualquer craceteres que nao seja quebra de linha.
+
+                 /* De negação*/
+[^abc] -> negação (nega todos "a", "b" e "c")
+\D -> não numeros
+\W -> todos caracteres que não são alfanumericos
+\S -> tudo que não for espaço branco
+
+              /* Seleção de \w quatro vezes */
+\w\w\w\w
+
+                     /* Repetição */
+ \d{2, 4} -> Repete no mínimo 2 e no máximo 4 dígitos
+
+ /* Opcional */
+caraceter + "?" -> Opcional
 
 var texto = "Boana punctata é uma espécie de anfíbio da família Hylidae, encontrada no Brasil, Argentina, Bolívia, Colômbia, Equador, Guiana, Guiana Francesa, Paraguai, Peru, Suriname, Trindade e Tobago e Venezuela. Está presente em diversos habitats, como florestas primárias e secundárias, áreas alagadas e urbanizadas, geralmente associada a plantas aquáticas."
 
 texto.match(/\w/m/g);
+
+104 #17
