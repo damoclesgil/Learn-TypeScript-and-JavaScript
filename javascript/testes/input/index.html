@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input HTML</title>
+  </head>
+  <style>
+    body {
+      /* background-color: #212121; */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      height: 50vh;
+    }
+    input {
+      border: 1px solid;
+      padding: 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 80%;
+      height: 50vh;
+      font-size: 2em;
+    }
+  </style>
+
+  <body>
+    <input
+      type="text"
+      id="inputaFilhaDumaPuta"
+      onkeypress="javascript:return moneyMask(event)"
+    />
+
+    <script type="text/javascript">
+      function moneyMask(evt) {
+        var iKeyCode = evt.which ? evt.which : evt.keyCode;
+        if (
+          (iKeyCode < 44 && iKeyCode != 8) ||
+          iKeyCode == 45 ||
+          iKeyCode == 47 ||
+          iKeyCode > 57
+        ) {
+          return false;
+        }
+        if (iKeyCode == 44 || iKeyCode == 46) {
+          if (evt.target.value.indexOf(".") === -1) {
+            if (evt.target.value === "") {
+              evt.target.value = "0" + ".";
+            } else {
+              evt.target.value = evt.target.value + ".";
+            }
+          }
+          return false;
+        }
+        return true;
+      }
+    </script>
+    <script>
+      function handlePaste(e) {
+        var clipboardData, copyValue;
+
+        e.stopPropagation();
+        e.preventDefault();
+
+        clipboardData = e.clipboardData || window.clipboardData;
+        copyValue = clipboardData.getData("Text");
+        
+        document.getElementById("inputaFilhaDumaPuta").value = copyValue.replace(",", ".");
+      }
+      document.getElementById("inputaFilhaDumaPuta").addEventListener("paste", handlePaste);
+      </script>
+  </body>
+  </html>
+<!-- 
+0,05
+   // if (isNaN(copyValue)) {
+        //   console.log(copyValue + " is not a number <br/>");
+        // }
+        // console.log('is Number!')
+        // 0,05
+-->
+  

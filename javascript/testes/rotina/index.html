@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rotina</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glorious/demo/dist/gdemo.min.css" />
+
+    <div id="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@glorious/demo/dist/gdemo.min.js"></script>
+    <script type="text/javascript">
+      const demo = new GDemo('#container')
+
+      const code = `
+function rodarTotinaTroxa(){
+  const rander = rotina 
+  console.log("Zé Rotina!");
+}
+
+rodarTotinaTroxa();
+`
+
+      demo
+        .openApp('editor', {minHeight: '350px', windowTitle: 'rotinadorander.js'})
+        .write(code, {onCompleteDelay: 1500})
+        .openApp('terminal', {minHeight: '350px', promptString: '$'})
+        .command('npm install rotinatroxa', {onCompleteDelay: 500})
+        .respond('Rander')
+        .command('npm install paunocudequemtalendo')
+        .respond('Cesar')
+        .command('--rotinaclean')
+        .respond('Zé do BIT')
+        .respond('by: Vincius')
+        .end()
+    </script>
+  </body>
+</html>
